@@ -1,0 +1,57 @@
+/* Nav bar */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+nav {
+    background-color: white;
+    display: inline-block;
+    width: 94vw;
+    border: 3px solid gray;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: 3px solid darkblue;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px;
+}
+
+button:hover {
+    transition-duration: 0.4s;
+    background-color:gray;
+}
+
+h1 {
+
+}
+
+h4 {
+    padding: 10px 8px;
+}
+
+#quizBody {
+    text-align: center;
+    padding: 20px;
+}
