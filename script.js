@@ -18,7 +18,7 @@ var scorePageEl = document.getElementById("score-page");
 var startBtnEl = document.querySelector("#start-game");
 var timerEl = document.querySelector("#timer");
 
-var newInits = JSON.parse(localStorage.getItem("inits")) || [];
+var saveScores = JSON.parse(localStorage.getItem("saveScores")) || [];
 
 var questionArray = [{
         question: "1. Commonly used data types DO NOT include",
@@ -87,7 +87,7 @@ function tick(){
      // show time
      timerEl.textContent = time;
     
-    if (time < 0 || time == 0){
+    if (time <= 0 || questionIndex >= 4){
         clearInterval(timer)
         gameOver();
         
@@ -146,28 +146,39 @@ function storeScores(event) {
     
     console.log(event.target);
 
-    userobj = {
-        initialsEl,
-        scoreDiv,
+   var  userobj = {
+        initials: initialsEl.value,
+        score
     }
+
+    saveScores.push(userobj);
     // get the user input
-    localStorage.setItem('inits', JSON.stringify (initialsEl.value));
-    localStorage.setItem('score', JSON.stringify (scoreDiv.value));
+    localStorage.setItem('saveScores', JSON.stringify (saveScores));
+    // localStorage.setItem('score', JSON.stringify (scoreDiv.value));
 
     endPageEl.setAttribute("class", "hide");
     scorePageEl.setAttribute("class", "show");
-    //  display new initials and score
-    // var initials = document.createElement("li");
-    // initials.textContent = JSON.parse(localStorage.getItem("inits"));
-
-   
     
-    // newScoreLi = JSON.parse(localStorage.getItem("initialsEl"));
+   renderScores();
+    
+    // Create a list item el.  change value of li to saveScores.  
+    // Loop through local storage and add list item el, change.
+    // Every score
+
+  
+
+
+}
+
+function renderScores(){
+    for (let i=0; i < saveScores.length; i++) {
+        const element = saveScores [i];
+        var newLi = document.createElement ("li")
+        newLi.textContent = saveScores[i].initials + "--" + saveScores [i].score;
+        highScoresListEl.appendChild("li")
+    }
 
     
-
-    
-
 }
 
 
