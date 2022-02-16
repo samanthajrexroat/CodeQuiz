@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <h4 id="high-scores">High Scores</h4>
-        <h4 class="timer"> Time left: <span id="timer"></span></h4>
-    </header>
+    <nav>
+        <h4 id="high-scores" class= "left">High Scores</h4>
+        <h4 class="right"> Time left: <span id="timer"></span></h4>
+        <h4 class="right"> Score <span id="scoreDiv"></span></h4>
+    </nav>
 
     <div id="start-page" class="show">
         <div class="start-container">
@@ -28,7 +29,8 @@
     <div id="question-page" class="hide">
         <div class="question-container">
             <div id="question"></div>
-            <div id="answer-buttons" class="btn-grid"></div>
+            <div id="options"></div>
+            <button id="answer-buttons" class="btn-grid">Next</button>
         </div>
     </div>
     
@@ -40,7 +42,7 @@
             <form id="enter-initials" class="initials">
                 <p>Enter Initials:
                     <input type="text" name="initials" id="initials" class="text-input" />
-                    <button class="start-end-btn" id="submit-score" type="submit"></button>
+                    <button class="start-end-btn" id="submit-score" type="submit">Submit</button>
                 </p>
             </form>
         </div>

@@ -6,7 +6,13 @@
 .right {
     float: right;
 }
+.hide {
+    display: none;
+}
 
+.show {
+    display: block;
+}
 nav {
     background-color: white;
     display: inline-block;
@@ -51,7 +57,7 @@ h4 {
     padding: 10px 8px;
 }
 
-#quizBody {
+#question-page {
     text-align: center;
     padding: 20px;
 }
