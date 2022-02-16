@@ -5,18 +5,20 @@ var questionIndex = 0;
 var score = 0;
 var scoreDiv = document.getElementById("scoreDiv");
 var initialsEl = document.getElementById("initials");
-// var highScoresEl = document.getElementById("high-scores");
+var highScoresListEl = document.getElementById("high-scores-list");
 var startPageEl = document.getElementById("start-page");
 var questionPageEl = document.getElementById("question-page");
 var questionEl = document.getElementById("question");
 var optionsEl = document.getElementById("options");
 var answerBtnsEl = document.getElementById("answer-buttons");
 var endPageEl = document.getElementById("end-page");
-var submitBtn = document.getElementById("submit");
-
+var submitBtn = document.getElementById("submit-score");
+var scorePageEl = document.getElementById("score-page");
 
 var startBtnEl = document.querySelector("#start-game");
 var timerEl = document.querySelector("#timer");
+
+var newInits = JSON.parse(localStorage.getItem("inits")) || [];
 
 var questionArray = [{
         question: "1. Commonly used data types DO NOT include",
@@ -96,7 +98,7 @@ function nextQuestion(){
     questionIndex++
     questionEl.innerText = questionArray[questionIndex].question;
    
-    optionsEl.innerHTML = ""
+    optionsEl.innerText = ""
 
     for (var i = 0; i < 4; i++){
         var button = document.createElement("button");
@@ -130,19 +132,41 @@ function checkAnswer(event){
 }
 
 function gameOver(){
-    // show question page
+    
     questionPageEl.setAttribute("class", "hide");
-    // hide starting page
     endPageEl.setAttribute("class", "show");
-    submitBtn.addEventListener("click", highScores);
+
+    submitBtn.addEventListener("click", storeScores);
 }
 
 // 
 
-function highScores() {
+function storeScores(event) {
+    event.preventDefault();
+    
+    console.log(event.target);
+
+    userobj = {
+        initialsEl,
+        scoreDiv,
+    }
     // get the user input
-  localStorage.setItem('inits', document.getElementById("initials").value);
-       
+    localStorage.setItem('inits', JSON.stringify (initialsEl.value));
+    localStorage.setItem('score', JSON.stringify (scoreDiv.value));
+
+    endPageEl.setAttribute("class", "hide");
+    scorePageEl.setAttribute("class", "show");
+    //  display new initials and score
+    // var initials = document.createElement("li");
+    // initials.textContent = JSON.parse(localStorage.getItem("inits"));
+
+   
+    
+    // newScoreLi = JSON.parse(localStorage.getItem("initialsEl"));
+
+    
+
+    
 
 }
 
