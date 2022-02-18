@@ -8,7 +8,7 @@ This application is a coding quiz that goes through five questions.  When the st
 
 https://samanthajrexroat.github.io/CodeQuizModule4/
 
-git@github.com:samanthajrexroat/CodeQuizModule4.git
+https://github.com/samanthajrexroat/CodeQuizModule4
 
 ## screenshots
 [Landing-Page](/assets/images/quiz-code-landing-page.png)

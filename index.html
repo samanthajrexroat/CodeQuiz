@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+<!-- nav bar shows score and timer -->
     <nav>
-        <h4 id="high-scores" class= "left">High Scores</h4>
         <h4 class="right"> Time left: <span id="timer"></span></h4>
-        <h4 class="right"> Score <span id="scoreDiv"></span></h4>
+        <h4 class="left"> Score <span id="score"></span></h4>
     </nav>
 
-    <div id="start-page" class="show">
+<!-- landing section to start game -->
+    <section id="start-page" class="show">
         <div class="start-container">
             <h1>Code Quiz!</h1>
             <p>Try to answer the following code questions
@@ -22,43 +24,24 @@
                 incorrect answers will penalize your score 
                 by 10 seconds!
             </p>
-            <button class="start-end-btn" id="start-game">Start Quiz</button>
+            <button id="start-game">Start Quiz</button>
         </div>
-    </div>
+    </section>
 
-    <div id="question-page" class="hide">
+    <!-- quiz gameplay  -->
+    <section id="question-page" class="hide">
         <div class="question-container">
             <div id="question"></div>
             <div id="options"></div>
-            <button id="answer-buttons" class="btn-grid">Next</button>
         </div>
-    </div>
-    
-    <div id="end-page" class="hide">
-        <div class="end-container">
-            <div id="score-banner">
-                <h1>Game over!</h1>
-            </div>
-            <form id="enter-initials" class="initials">
-                <p>Enter Initials:
-                    <input type="text" name="initials" id="initials" class="text-input" />
-                    <button class="start-end-btn" id="submit-score" type="submit">Submit</button>
-                </p>
-            </form>
-        </div>
-    </div>
+    </section>
 
-    <div id="score-page" class="hide">
-        <div class="score-container" class="hide">
-            <h1 class="high-scores">High Scores</h1>
-            <ol id="high-scores-list" class="score-list"></ol>
-        </div>
-        <div>
-            <button class="btn" id="play-again">Play Again</button>
-            <button class="btn" id="clear-scores">Clear High Scores</button>
-        </div>
-    </div>
+<!-- game over / enter initials section -->
+    <section id="end-page" class="hide end-container">
+        <h1>Game over!</h1>
+        <ul id="scores-list">Current Score</ul>
+    </section>
 
-    <script src="./script.js"></script>
+<script src="./script.js"></script>
 </body>
-</html>
+</html
