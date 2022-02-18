@@ -10,6 +10,6 @@ https://samanthajrexroat.github.io/CodeQuizModule4/
 
 https://github.com/samanthajrexroat/CodeQuizModule4
 
-## screenshots
-[Landing-Page](/assets/images/quiz-code-landing-page.png)
-[Game-Over](/assets/images/quiz-code-game-over.png)
+## screenshot links
+[Landing-Page](/assets/images/quiz-landing-page.png)
+[Game-Over](/assets/images/game-over-initials.png)
