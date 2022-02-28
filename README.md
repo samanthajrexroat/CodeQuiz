@@ -1,4 +1,4 @@
-# CodeQuizModule4
+# CodeQuiz
 
 ## Description
 
