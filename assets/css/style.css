@@ -21,10 +21,9 @@
     flex-direction: column;
     border: 3px solid #f2ae72;
     border-radius: 5px;
-    margin: 20px;
+    margin: 2rem;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
 }
 
 nav {
@@ -69,7 +68,8 @@ button:hover {
 }
 
 h1 {
-    size: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
     padding: 1rem;
 }
 
@@ -79,6 +79,11 @@ h4 {
 
 ol{
     margin: 10px
+}
+
+p {
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 #question-page {
