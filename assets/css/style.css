@@ -13,13 +13,15 @@
 
 .show {
     display: flex;
+    justify-content: center;
 }
 
 .start-container {
-    background-color: #f2e394;
+    background-color: #e9c46a;
     display: flex;
     flex-direction: column;
-    border: 3px solid #f2ae72;
+    align-items: center;
+    border: 3px ridge #f4a261;
     border-radius: 5px;
     margin: 2rem;
     text-align: center;
@@ -27,19 +29,22 @@
 }
 
 nav {
-    background-color: #f2e394;
+    background-color: #e9c46a;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    border: 3px solid #f2ae72;
+    border: 3px ridge #f4a261;
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
+    font-size: 2rem;
+    text-shadow: 2px 2px #2a9d8f;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #588c7e;
+    color: #264653;
+    background-color: #264653;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -48,28 +53,32 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #264653;
 }
 
 button {
-    border: 3px solid darkblue;
-    background-color: gainsboro;
-    color: black;
+    border: .5rem ridge #2a9d8f;
+    background-color: #f2ae72;
+    color: #264653;
+    box-shadow:10px 10px 5px #264653; 
     border-radius: 5px;
-    padding: 10px 16px;
-    font-size: 16px;
+    max-width: 10rem;
+    font-size: 2rem;
     font-family: 'Josefin Sans', sans-serif;;
-    margin: 4px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 button:hover {
     transition-duration: 0.4s;
-    background-color:gray;
+    background-color: #2a9d8f;
+    cursor: pointer;
 }
 
 h1 {
     font-size: 4rem;
     font-weight: bolder;
+    text-shadow: 2px 2px #2a9d8f;
     padding: 1rem;
 }
 
