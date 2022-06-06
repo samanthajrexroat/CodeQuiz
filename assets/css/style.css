@@ -1,24 +1,24 @@
 /* Nav bar */
-.left {
+/* .left {
     float: left;
 }
 
 .right {
     float: right;
-}
+} */
 
 .hide {
     display: none;
 }
 
 .show {
-    display: block;
+    display: flex;
 }
 
 .start-container {
     background-color: #f2e394;
-    display: block;
-    width: 94vw;
+    display: flex;
+    flex-direction: column;
     border: 3px solid #f2ae72;
     border-radius: 5px;
     margin: 20px;
@@ -29,12 +29,13 @@
 
 nav {
     background-color: #f2e394;
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    width: 94vw;
     border: 3px solid #f2ae72;
     border-radius: 5px;
     margin: 20px;
+    padding: 10px;
 }
 
 body {
@@ -69,10 +70,11 @@ button:hover {
 
 h1 {
     size: 2rem;
+    padding: 1rem;
 }
 
 h4 {
-    padding: 10px 8px;
+    padding: 1rem;
 }
 
 ol{

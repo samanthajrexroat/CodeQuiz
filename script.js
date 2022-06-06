@@ -44,6 +44,8 @@ var scoresListEl = document.getElementById("scores-list");
 
 var savedScores = JSON.parse(localStorage.getItem("saveScores")) || [];
 
+timerText.textContent = 30;
+scoreEl.textContent = 0;
 // Wait for user to start game
 startBtn.addEventListener("click", startGame);
 
