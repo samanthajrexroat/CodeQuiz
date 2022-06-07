@@ -92,7 +92,7 @@ function startGame(){
 // or takes off five seconds.
 function checkAnswer(event){
     console.log(event.target.value);
-    if (event.target.value =="true") {
+    if (event.target.value == "true") {
         score++;
         console.log(score);
         scoreEl.innerText = score;

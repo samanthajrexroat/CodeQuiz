@@ -1,12 +1,3 @@
-/* Nav bar */
-/* .left {
-    float: left;
-}
-
-.right {
-    float: right;
-} */
-
 .hide {
     display: none;
 }
@@ -46,18 +37,13 @@ body {
     flex-wrap: wrap;
 }
 
-a {
-    text-decoration: none;
-    color: #264653;
-}
-
 button {
     border: .5rem ridge #2a9d8f;
     background-color: #f2ae72;
     color: #264653;
     box-shadow:10px 10px 5px #264653; 
     border-radius: 5px;
-    max-width: 10rem;
+    max-width: auto;
     font-size: 2rem;
     font-family: 'Josefin Sans', sans-serif;;
     margin: 1rem;
@@ -88,10 +74,4 @@ ol{
 p {
     padding: 2rem;
     font-size: 2rem;
-}
-
-#question-page {
-    display: flex;
-    text-align: center;
-    padding: 20px;
 }
