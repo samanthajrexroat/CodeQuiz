@@ -65,16 +65,18 @@ function startGame(){
             gameOver();
         }
     }, 1000);
-
+    
     // render first question
     questionEl.innerText = questionArray[0].question;
     
-    
+    optionsEl.innerText = ""
 
     // creating buttons for all options
     for (var i = 0; i < 4; i++){
+        
         var button = document.createElement("button");
         button.innerText = questionArray[0].options[i];
+        
         button.classList.add("option");
         optionsEl.appendChild(button);
 
