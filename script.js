@@ -10,7 +10,7 @@ var questionArray = [{
     answer: "parentheses"
 },
 {
-    question: "3. Arrays in JavaScript can be used to store ___",
+    question: "3. Arrays in JavaScript can be used to store ___.",
     options: ["numbers and strings", "other arrays", "booleans", "all of the above"],
     answer: "all of the above"
 },
@@ -50,6 +50,7 @@ scoreEl.textContent = 0;
 startBtn.addEventListener("click", startGame);
 
 function startGame(){
+    
     // hide starting section
     startPageEl.setAttribute("class", "hide");
     // show question section
@@ -84,7 +85,11 @@ function startGame(){
             button.value = false
         }
         // wait for user to click on an answer
-        button.addEventListener("click", checkAnswer);
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+
+            checkAnswer(event);
+        });
     }
 }
 
@@ -165,7 +170,7 @@ function renderScores(){
         const element = savedScores [i];
         var newLi = document.createElement ("li");
         scoresListEl.appendChild(newLi);
-        newLi.textContent = element.userInits + "--" + element.score;
+        newLi.textContent = element.userInits + ":  " + element.score;
         
     }
 }

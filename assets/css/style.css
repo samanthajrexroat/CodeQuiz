@@ -1,18 +1,4 @@
-.hide {
-    display: none;
-}
 
-.show {
-    background-color: #e9c46a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px ridge #f4a261;
-    border-radius: 5px;
-    margin: 2rem;
-    text-align: center;
-    padding: 2rem;
-}
 
 nav {
     background-color: #e9c46a;
@@ -74,4 +60,25 @@ ol{
 p {
     padding: 2rem;
     font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px ridge #f4a261;
+    border-radius: 5px;
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#question {
+    font-size: 2rem;
+    padding: 2rem;
 }
