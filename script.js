@@ -166,7 +166,7 @@ function gameOver(){
 }
 
 function renderScores(){
-   
+    scoresListEl.textContent = ""
     for (let i=0; i < savedScores.length; i++) {
         console.log(savedScores);
         const element = savedScores [i];
