@@ -12,11 +12,6 @@
 }
 
 .show {
-    display: flex;
-    justify-content: center;
-}
-
-.start-container {
     background-color: #e9c46a;
     display: flex;
     flex-direction: column;
@@ -96,6 +91,7 @@ p {
 }
 
 #question-page {
+    display: flex;
     text-align: center;
     padding: 20px;
 }
