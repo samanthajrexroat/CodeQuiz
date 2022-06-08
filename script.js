@@ -98,10 +98,10 @@ function startGame(){
 // Checks for the 'true' answer and either adds a point
 // or takes off five seconds.
 function checkAnswer(event){
-    console.log(event.target.value);
+    // console.log(event.target.value);
     if (event.target.value == "true") {
         score++;
-        console.log(score);
+        // console.log(score);
         scoreEl.innerText = score;
         
     }else{
@@ -110,14 +110,16 @@ function checkAnswer(event){
 
     if (questionIndex <= 5){ 
         nextQuestion();
+    } else {
+        gameOver();
     }
 }
 
 // go through the rest of the questions
 function nextQuestion(){
     questionIndex++
+    
     questionEl.innerText = questionArray[questionIndex].question;
-   
     optionsEl.innerText = "";
 
     for (var i = 0; i < 4; i++){
