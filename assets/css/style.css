@@ -57,6 +57,11 @@ ol{
     margin: 10px
 }
 
+li {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 p {
     padding: 2rem;
     font-size: 2rem;

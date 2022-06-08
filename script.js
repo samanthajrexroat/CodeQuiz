@@ -118,7 +118,7 @@ function nextQuestion(){
     questionIndex++
     questionEl.innerText = questionArray[questionIndex].question;
    
-    optionsEl.innerText = ""
+    optionsEl.innerText = "";
 
     for (var i = 0; i < 4; i++){
         var button = document.createElement("button");
